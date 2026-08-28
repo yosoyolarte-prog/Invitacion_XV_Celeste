@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis XV Años | María Celeste</title>
+    <link rel="icon" type="image/png" href="assets/Logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="musicaFondo" loop src="assets/Lana del Rey; Once Upon a Dream (Traducida al español).mp3"></audio>
+
+    <div id="pantallabienvenida" class="pantalla-bienvenida">
+        <div class="brillo brillo-uno"></div>
+        <div class="brillo brillo-dos"></div>
+        <div class="tarjeta-bienvenida">
+            <img src="assets/Logo.png" alt="Zapatilla de cristal" class="icono-zapatilla">
+            <p class="etiqueta">Era hace una vez...<br>una niña lista para vivir su cuento de hadas</p>
+            <h1>Has sido invitado<br>al baile real</h1>
+            <p class="bienvenida-nombre">de María Celeste</p>
+            <button id="btnEntrar" class="btn-magico" type="button">Abrir invitación <span aria-hidden="true">&#10022;</span></button>
+        </div>
+    </div>
+
+    <main id="Invitacióncontenedor" class="invitacion-contenedor">
+        <section class="seccion-foto seccion-foto-inicial animar" aria-labelledby="titulo-foto">
+            <div class="marco-foto">
+                <img src="assets/Ce_I.jpeg" alt="Castillo iluminado bajo la luna, lugar de ensueño para la celebración">
+                <div class="sello-foto">MJ</div>
+            </div>
+        </section>
+
+        <header class="seccion-encabezado animar">
+            <p class="etiqueta">Con la bendición de Dios y el amor de mi familia</p>
+            <p class="subtitulo-real">Te invito a celebrar</p>
+            <h1 class="nombre-quinceanera">María Celeste</h1>
+            <p class="frase-celebracion">Mis XV Años</p>
+            <div class="ornamento" aria-hidden="true"><span></span>&#10022;<span></span></div>
+        </header>
+
+        <section class="seccion-foto animar" aria-labelledby="titulo-foto">
+            <div class="marco-foto">
+                <img src="assets/cele.png" alt="Castillo iluminado bajo la luna, lugar de ensueño para la celebración">
+                <div class="sello-foto">XV</div>
+            </div>
+            <div class="texto-foto">
+                <p class="etiqueta">Una noche para recordar</p>
+                <h2 id="titulo-foto">Un cuento hecho realidad</h2>
+                <p>Me encantaría compartir contigo esta noche tan especial, llena de magia, música y momentos inolvidables.</p>
+                <p class="nota-foto">Hagamos de ese día un recuerdo inolvidable.</p>
+            </div>
+        </section>
+
+        <section class="seccion-contador animar" aria-labelledby="titulo-contador">
+            <p class="etiqueta">La magia comienza en</p>
+            <h2 id="titulo-contador">Cuenta regresiva</h2>
+            <div id="contador" class="cajas-contador">
+                <div class="caja-tiempo"><span id="dias">00</span><small>Días</small></div>
+                <div class="caja-tiempo"><span id="horas">00</span><small>Horas</small></div>
+                <div class="caja-tiempo"><span id="minutos">00</span><small>Minutos</small></div>
+                <div class="caja-tiempo"><span id="segundos">00</span><small>Segundos</small></div>
+            </div>
+        </section>
+
+        <section class="seccion-detalles" aria-label="Detalles del evento">
+            <article class="tarjeta-cristal tarjeta-misa animar">
+                <div class="icono-tarjeta" aria-hidden="true">&#9962;</div>
+                <p class="etiqueta">Primera parada</p>
+                <h2>Misa de Acción de Gracias</h2>
+                <p><strong>19 de septiembre de 2026</strong></p>
+                <p>4:00 PM</p>
+                <p>Iglesia San Francisco</p>
+            </article>
+            <article class="tarjeta-cristal tarjeta-baile animar">
+                <div class="icono-tarjeta" aria-hidden="true">&#10024;</div>
+                <p class="etiqueta">Después de la misa</p>
+                <h2>Gran baile real</h2>
+                <p><strong>19 de septiembre de 2026</strong></p>
+                <p>6:00 PM</p>
+                <p>Salón de Eventos “Jainor”</p>
+            </article>
+        </section>
+
+        <section class="seccion-accion animar">
+            <div class="accion-icono" aria-hidden="true">&#9906;</div>
+            <div>
+                <p class="etiqueta">Encuentra el castillo real</p>
+                <h2>Salón de Eventos “Jainor”</h2>
+                <p>Te esperamos para celebrar juntos. Consulta la ubicación y llega sin perderte.</p>
+                <a href="https://maps.app.goo.gl/J6xNH6Fo82Ubi9xr6" target="_blank" rel="noopener" class="btn-secundario"> Lugar del castillo <span aria-hidden="true">&#8599;</span></a>
+            </div>
+        </section>
+
+        <section class="seccion-accion confirmacion animar">
+            <div class="accion-icono" aria-hidden="true">&#9825;</div>
+            <div>
+                <p class="etiqueta">Tu presencia iluminará esta noche</p>
+                <h2>Confirma tu asistencia</h2>
+                <p>Ayúdame a preparar esta noche tan especial confirmando por WhatsApp.</p>
+                <a href="https://wa.link/w2q0bb" target="_blank" rel="noopener" class="btn-whatsapp">Si asistiré <span aria-hidden="true">&#8599;</span></a>
+            </div>
+        </section>
+
+        <footer class="pie-pagina animar"><span>&#10022;</span> Te espero para vivir este sueño juntos - María Celeste <span>&#10022;</span></footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
