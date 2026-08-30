@@ -240,11 +240,15 @@ body::before {
 }
 
 .seccion-foto-inicial .marco-foto img {
-    width: 100%;
+    display: block;
+    width: min(100%, 420px);
+    max-height: 500px;
     height: auto;
+    margin: 0 auto;
     aspect-ratio: 3 / 4;
     object-fit: cover;
     object-position: center;
+    border-radius: 18px;
 
     -webkit-mask-image:
         linear-gradient(to bottom, transparent 0%, black 9%, black 88%, transparent 100%),
@@ -261,6 +265,19 @@ body::before {
     max-width: 620px;
     margin: 0 auto;
     text-align: center;
+}
+
+.logo-inicio {
+    position: absolute;
+    right: 40px;
+    bottom: -18px;
+    width: 80px;
+    height: 66px;
+    filter: drop-shadow(0 0 4px rgba(244, 206, 122, .65));
+    display: grid;
+    place-items: center;
+    padding: 8px;
+    z-index: 2;
 }
 
 .sello-foto { 
